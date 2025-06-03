@@ -9,3 +9,63 @@ body{
     font-weight: 600;
     font-family: "Poppins", sans-serif;
 }
+
+.bar{
+
+    margin: 0 auto;
+    margin-top: 1.93rem;
+
+    width: 100%;
+    max-width: 75rem;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.logo{
+    font-size: 3rem;
+}
+
+.btn-menu{
+
+    width: 3.10rem;
+    height: 3rem;
+
+    border: 0; /* limpia los estilos del boton */
+    background: transparent; /* limpia los estilos del boton */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.79rem;
+}
+    
+.btn-menu.open div:nth-child(1){
+  transform: rotate(45deg);
+}
+
+.btn-menu.open div:nth-child(2){
+  opacity: 0;
+}
+
+.btn-menu.open div:nth-child(3){
+  transform: rotate(-45deg);
+}
+
+
+.line{
+    
+    width: 100%;
+    height: 0.3em;
+    background-color: black;
+    border-radius: 0.1em;
+
+    transition: all .5s;
+    transform-origin: left;
+
+}
