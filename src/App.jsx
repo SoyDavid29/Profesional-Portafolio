@@ -1,3 +1,4 @@
+import Profile from "./Components/Profile"
 import Sidebar from "./Components/Sidebar"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <>
      <Sidebar/>
+     <Profile/>
     </>
   )
 }

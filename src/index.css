@@ -5,11 +5,14 @@
 }
 
 body{
-    font-size: 16px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
+    
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+   
+  background: #45c5d9;
+  background: linear-gradient(90deg,rgba(69, 197, 217, 1) 0%, rgba(82, 82, 247, 1) 15%, rgba(107, 242, 238, 1) 100%);
 }
-
 .bar{
 
     margin: 0 auto;
@@ -62,10 +65,92 @@ body{
     
     width: 100%;
     height: 0.3em;
-    background-color: black;
+    background-color: rgb(54, 54, 54);
     border-radius: 0.1em;
 
     transition: all .5s;
     transform-origin: left;
 
+}
+
+.profile-animation {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+.animation {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 20px;
+
+  position: relative; /* add this if you want things to be absolute inside */
+}
+
+.figures {
+  width: 100%;
+  max-width: 70rem; /* optional limit */
+  position: relative;
+}
+
+.figure {
+  width: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 70% 30% 49% 51% / 30% 45% 55% 70%;
+  background: #18181a;
+  background: linear-gradient(90deg,rgba(24, 24, 26, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(51, 55, 56, 1) 100%);
+  position: relative;
+  overflow: hidden ;
+
+  
+  
+  animation: breathe 4s ease-in-out infinite, spin 10s linear infinite;
+}
+
+.img {
+  width: 90%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid rgb(0, 0, 0);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: counterSpin 10s linear infinite;
+  
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1), rotate(0deg);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+    
+  }
+  100% {
+    transform: scale(1.5), rotate(180deg);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes counterSpin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg); /* Spin in opposite direction */
+  }
 }
