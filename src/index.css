@@ -9,9 +9,9 @@ body{
   font-size: 16px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-   
-  background: #45c5d9;
-  background: linear-gradient(90deg,rgba(69, 197, 217, 1) 0%, rgba(82, 82, 247, 1) 15%, rgba(107, 242, 238, 1) 100%);
+
+  background: #020024;
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 .bar{
 
@@ -19,19 +19,25 @@ body{
     margin-top: 1.93rem;
 
     width: 100%;
-    max-width: 75rem;
+    min-width: 410px;
+    max-width: 820px;
+
     height: auto;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    gap: 6rem;
+
+  
 
 
 }
 
 .logo{
     font-size: 3rem;
+    color: aliceblue;
 }
 
 .btn-menu{
@@ -74,35 +80,48 @@ body{
 }
 
 .profile-animation {
-  margin-top: 2rem;
+  margin-top: 1rem;
+
   width: 100%;
+  max-width: 81.25rem;
+  min-width: 310px;
   height: auto;
+
+  display: flex;
+  align-items: center;
 }
 
 .animation {
   width: 100%;
   height: auto;
+
   display: flex;
-  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1rem;
+
 
   position: relative; /* add this if you want things to be absolute inside */
 }
 
-.figures {
-  width: 100%;
-  max-width: 70rem; /* optional limit */
-  position: relative;
+.figures{
+
+  width: 80%;
+  height: auto;
 }
 
 .figure {
-  width: 50%;
+  width: 100%;
   aspect-ratio: 1/1;
-  border-radius: 70% 30% 49% 51% / 30% 45% 55% 70%;
+  border-radius: 70% 30% 49% 51% / 30% 45% 55% 70%; 
   background: #18181a;
   background: linear-gradient(90deg,rgba(24, 24, 26, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(51, 55, 56, 1) 100%);
   position: relative;
   overflow: hidden ;
-
+ 
+  padding: 3rem;
+  margin-left: 3rem;
   
   
   animation: breathe 4s ease-in-out infinite, spin 10s linear infinite;
@@ -112,8 +131,9 @@ body{
   width: 90%;
   aspect-ratio: 1/1;
   object-fit: cover;
+  padding: 1rem;
   border-radius: 50%;
-  border: solid rgb(0, 0, 0);
+  
 
   position: absolute;
   top: 50%;
@@ -122,6 +142,36 @@ body{
 
   animation: counterSpin 10s linear infinite;
   
+}
+
+.texts{
+  margin-right: 2.5rem;
+  width: 100%;
+  height: auto;
+
+  padding: 2rem;
+}
+
+.uxui{
+  font-size: 2em;
+  color: antiquewhite;
+}
+
+.on{
+ 
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+
+  color: antiquewhite;
+
+}
+
+.circle{
+  width: 15px;
+  height: 15px;
+  background-color: #47b13e;
+  border-radius: 50%;
 }
 
 @keyframes breathe {
@@ -152,5 +202,24 @@ body{
   }
   100% {
     transform: translate(-50%, -50%) rotate(-360deg); /* Spin in opposite direction */
+    
+  }
+}
+
+@keyframes colors{
+  0%{
+    background: #18181a;
+    background: linear-gradient(90deg,rgba(24, 24, 26, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(51, 55, 56, 1) 100%);
+  }
+
+  50%{
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  }
+
+  100%{
+    
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 20%, rgba(9, 9, 121, 1) 46%, rgba(0, 212, 255, 1) 91%);
   }
 }
