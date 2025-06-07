@@ -20,7 +20,6 @@ body{
 
 .bar{  
   width: 100%;
-  min-width: 580px; /* key in sidebar */
   padding: 1em;
 
   display: flex;
@@ -82,7 +81,6 @@ body{
   margin-top: 1rem;
 
   width: 100%;
-  min-width: 170px;
   height: auto;
 
   padding: 3rem;
@@ -95,7 +93,6 @@ body{
 
 .animation{
   width: 100%;
-  min-width: 170px; 
   height: auto;
 
   display: flex;
@@ -142,7 +139,6 @@ body{
 .texts{
   margin-right: 2.5rem;
   width: 100%;
-  min-width: 240px;
   height: auto;
 
   padding: 1rem;
@@ -172,12 +168,55 @@ body{
 
 }
 
-.circle{
-  width: 15px;
-  height: 15px;
-  background-color: #47b13e;
-  border-radius: 50%;
+.target {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 75rem;
+
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+
+  box-sizing: border-box;
+  word-break: break-word; /* this stops long words from overflowing */
 }
+
+/* TITLE STYLE */
+.tittle {
+  font-size: clamp(1.5rem, 4vw, 3rem); /* Responsive text size */
+  line-height: 1.2;
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* PARAGRAPH STYLE */
+.about {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  max-width: 60ch;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+/* utilitary class */
+
+.centered-section {
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+
+
 
 @keyframes flow{
   0%{
@@ -247,5 +286,11 @@ body{
 @keyframes gradient{
   to{
     background-position: 200%;
+  }
+}
+
+@media (max-width: 576px){
+  body{
+    display: flex;
   }
 }
