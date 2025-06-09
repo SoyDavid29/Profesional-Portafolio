@@ -211,7 +211,9 @@ body{
 
 .magic-text{
 
-  margin-top: 3rem;
+  font-size: 3em;
+
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
 
@@ -223,7 +225,24 @@ body{
 
   animation: gradient 3s linear infinite;
   -o-animation-fill-mode: both;
+
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   
+  animation:
+        scale-up both ease-in-out,
+        fade-away both linear;
+        animation-range:
+        exit 0% exit 65%,
+        /* Rango de escala */
+        exit 40% exit 100%;
+    /* Rango de opacidad */
+}
+
+
+.magic-text.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
@@ -308,6 +327,7 @@ body{
     background-position: 200%;
   }
 }
+
 
 @media (max-width: 576px){
   body{
