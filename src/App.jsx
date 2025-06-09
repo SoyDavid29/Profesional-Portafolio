@@ -1,8 +1,10 @@
 import Profile from "./Components/Profile"
 import Sidebar from "./Components/Sidebar"
 import Target from "./Components/Target"
+import { useState } from "react"
 
 function App() {
+
 
   return (
     <>
@@ -10,7 +12,8 @@ function App() {
      <Profile/>
      <Target/>
 
-     <h1>My magic use</h1>
+     <h1 className="magic-text" >My magic</h1>
+
     </>
   )
 }
