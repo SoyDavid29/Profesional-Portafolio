@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 import Profile from "./Components/Profile"
 import Sidebar from "./Components/Sidebar"
 import Target from "./Components/Target"
@@ -24,6 +25,9 @@ function App() {
 
   return (
     <>
+     
+     
+     
      <Sidebar/>
      <Profile/>
      <Target/>

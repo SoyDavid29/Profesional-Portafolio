@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
 
   font-size: 16px;
@@ -21,22 +25,53 @@ body{
 
 
 .bar{  
+
+  position: fixed;
+  top: 	0;
+ 
+ 
   width: 100%;
-  padding: 1em;
+  padding: 0.5em;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   gap: 2em;
+  
+  transition: transform 0.8s ease; /* we activate the transition */
+  z-index: 999;
 
+  background: rgba(167, 86, 204, 0.1); /* Transparent white */
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  
+}
+
+.bar.hidden{
+    transform: translateY(-200%); /* -50% in X, -200% in Y when the sideBar is hidden */
+}
+
+.bar.visible{
+    transform: translateY( 0); /* it return to position normal when it's visible */
 }
 
 
 
-.logo{
-    font-size: 3rem;
-    color: aliceblue;
+.logo-button {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0f9482;
+  transition: color 0.4s ease;
+}
+
+.logo-button:hover {
+  color: rgb(133, 130, 131);
 }
 
 .btn-menu{
@@ -80,7 +115,7 @@ body{
 
 .profile-animation {
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 3rem;
 
   width: 100%;
   height: auto;
@@ -334,3 +369,4 @@ body{
     display: flex;
   }
 }
+
