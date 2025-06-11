@@ -5,8 +5,8 @@ export default function Title ({ scrollY })  {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Example: make it visible after scrolling 100px
-    if (scrollY > 150) {
+    // Example: make it visible after scrolling 200px
+    if (scrollY > 200) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -14,7 +14,7 @@ export default function Title ({ scrollY })  {
   }, [scrollY]);
 
   return (
-    <h2 className={`magic-text ${isVisible ? 'visible' : ''}`}>
+    <h2 className={`magic-text ${isVisible ? 'visible' : 'hidden'}`}>
       💫 My Magic Stufs 💫
     </h2>
   );

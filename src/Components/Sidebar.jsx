@@ -22,7 +22,7 @@ export default function Sidebar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll to top
+  // Scroll to top to make click on the logo
   const scrollToTop = () => {
     scroll.scrollToTop({
       duration: 800,

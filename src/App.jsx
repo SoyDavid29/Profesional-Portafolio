@@ -8,7 +8,7 @@ import Title from "./Components/Tittle"
 
 
 function App() {
-   
+
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -25,14 +25,14 @@ function App() {
 
   return (
     <>
-     
-     
-     
-     <Sidebar/>
-     <Profile/>
-     <Target/>
 
-     <Title scrollY={scrollY} />
+
+
+      <Sidebar />
+      <Profile />
+      <Target />
+
+      <Title scrollY={scrollY} />
 
     </>
   )

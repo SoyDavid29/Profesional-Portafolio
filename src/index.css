@@ -205,6 +205,16 @@ body{
 
 }
 
+.circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #039b18;
+
+  animation: color 1s ease-out infinite;
+}
+
+
 .target {
   margin: 0 auto;
   width: 90%;
@@ -217,7 +227,10 @@ body{
   flex-direction: column;
   align-items: center;
 
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(81, 221, 240, 0.233);
+  backdrop-filter: blur(40px) saturate(130%);
+  -webkit-backdrop-filter: blur(40px) saturate(130%);
+
   border-radius: 1rem;
   color: white;
   text-align: center;
@@ -231,6 +244,7 @@ body{
   font-size: clamp(1.5rem, 4vw, 3rem); /* Responsive text size */
   line-height: 1.2;
   background: linear-gradient(to right, #ff6ec4, #7873f5);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
@@ -253,31 +267,35 @@ body{
   justify-content: center;
 
 
-  background: linear-gradient(to right, #7873f5, #8d8a8a);
+  background: linear-gradient(to right, #899cf0, #b046ee);
   background-size: 200%;
-  -webkit-background-clip: text;
+  background-clip: text;  
   -webkit-text-fill-color: transparent;
 
   animation: gradient 3s linear infinite;
-  -o-animation-fill-mode: both;
+
 
   transform: translateY(50px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  
-  animation:
-        scale-up both ease-in-out,
-        fade-away both linear;
-        animation-range:
-        exit 0% exit 65%,
-        /* Rango de escala */
-        exit 40% exit 100%;
-    /* Rango de opacidad */
-}
+  transition: opacity 1s ease-out, transform 1s ease-out;
 
+}
 
 .magic-text.visible {
   opacity: 1;
   transform: translateY(0);
+  transform: scale(1.1);
+}
+
+.magic-text.hidden {
+  opacity: 0;
+  transform: translateY(0);
+  transform: scale(0.5);
+}
+
+.magic-text.hidden{
+  opacity: 0;
+  transform: translateY(-50);
+  transform: scale(0.9);
 }
 
 
@@ -337,6 +355,12 @@ body{
     transform: translate(-50%, -50%) rotate(-360deg); /* Spin in opposite direction */
     
   }
+}
+
+@keyframes color{
+  from{background-color: #039b18;}
+  to{background-color: #2ff048;}
+
 }
 
 @keyframes colors{
