@@ -34,6 +34,16 @@ function App() {
 
       <Title scrollY={scrollY} />
 
+      <div className='technologies-container'>
+        <img  className="log" src="/logos/html.svg" alt="logo"/>
+        <img  className="log" src="/logos/csswizardry.svg" alt="logo"/>
+        <img  className="log" src="/logos/javascript.svg" alt="logo"/>
+        <img  className="log" src="/logos/figma.svg" alt="logo"/>
+        <img  className="log" src="/logos/react.svg" alt="logo"/>
+        <img  className="log" src="/logos/photoshop.svg" alt="logo"/>
+
+      </div>
+
     </>
   )
 }

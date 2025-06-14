@@ -298,6 +298,41 @@ body{
   transform: scale(0.9);
 }
 
+.technologies-container{
+  margin: 0 auto;
+  margin-top: 2rem;
+  
+
+  width: 90%;
+  height: auto;
+  padding: 2rem;
+
+  display: flex;
+  align-items: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+
+  border: solid black 3px;
+}
+
+.log{
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media(max-width: 790px){
+  
+  .technologies-container{
+    margin-left: 2rem;
+  }
+
+  .log{
+    width: 25%;
+  }
+}
+
 
 /* utilitary class */
 
