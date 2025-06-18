@@ -304,20 +304,19 @@ body{
   
 
   width: 90%;
+  max-width: 800px;
   height: auto;
-  padding: 2rem;
+  padding: 1.5em;
 
   display: flex;
+  justify-content: center;
   align-items: row;
   flex-wrap: wrap;
   gap: 2rem;
-
-
-  border: solid black 3px;
 }
 
 .log{
-  width: 30%;
+  width: 20%;
   height: auto;
   object-fit: cover;
 }
@@ -329,7 +328,7 @@ body{
   }
 
   .log{
-    width: 25%;
+    width: 20%;
   }
 }
 
@@ -422,10 +421,14 @@ body{
   }
 }
 
+@keyframes position{
+
+}
 
 @media (max-width: 576px){
   body{
     display: flex;
   }
 }
+
 

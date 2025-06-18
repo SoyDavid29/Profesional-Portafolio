@@ -41,6 +41,8 @@ function App() {
         <img  className="log" src="/logos/figma.svg" alt="logo"/>
         <img  className="log" src="/logos/react.svg" alt="logo"/>
         <img  className="log" src="/logos/photoshop.svg" alt="logo"/>
+        <img  className="log" src="/logos/git.svg" alt="logo"/>
+        <img  className="log" src="/logos/github.svg" alt="logo"/>
 
       </div>
 

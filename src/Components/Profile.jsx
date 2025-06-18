@@ -10,7 +10,7 @@ export default function Profile(){
                     </div>
 
                     <div className="texts">
-                    <h1 className="uxui"><span className="online"></span>Web Developper and UX/UI Designer</h1>
+                    <h1 className="uxui"><span className="online"></span> Frontend Developer and UX/UI Designer</h1>
                     <p className="on"><span className="circle"></span>Available</p>
                     </div>
 
