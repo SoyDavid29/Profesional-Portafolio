@@ -177,7 +177,7 @@ body{
 }
 
 .figure {
-  width: 75%;
+  width: 20%;
   min-width: 220px;
   aspect-ratio: 1/1;
   border-radius: 70% 30% 49% 51% / 30% 45% 55% 70%; 
