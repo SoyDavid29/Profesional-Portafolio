@@ -22,12 +22,9 @@ function App() {
   }, []);
 
 
-
   return (
     <>
-
-
-
+    
       <Sidebar />
       <Profile />
       <Target />
