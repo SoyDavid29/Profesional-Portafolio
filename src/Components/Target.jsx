@@ -2,7 +2,7 @@ import { Element } from 'react-scroll';
 
 export default function Target() {
   return (
-    <Element name="about-me" className="target centered-section">
+    <Element name="about-me" className="target">
       <h1 className="tittle">Hi everyone, I'm David!</h1>
       <p className="about">
         Hey there! I'm a Computer Systems Engineering student with a big passion for UX/UI Design. 
