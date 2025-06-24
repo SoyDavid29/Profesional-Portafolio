@@ -41,7 +41,7 @@ body {
 }
 
 .main-bar.scrolled {
-  width: 60%;
+  width: 55%;
   padding: 0.5em 1em;
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.8);
