@@ -15,7 +15,7 @@ export default function Title ({ scrollY })  {
 
   return (
     <h2 className={`magic-text ${isVisible ? 'visible' : 'hidden'}`}>
-      💫 My Magic Stufs 💫
+      💫 MY SKYLLS 💫
     </h2>
   );
 };
