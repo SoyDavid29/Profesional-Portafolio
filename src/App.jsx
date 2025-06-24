@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-
+import Mainbar from './Components/Mainbar';
 import Profile from "./Components/Profile"
 import Sidebar from "./Components/Sidebar"
 import Target from "./Components/Target"
@@ -24,8 +24,8 @@ function App() {
 
   return (
     <>
-    
-      <Sidebar />
+      <Mainbar/>
+      
       <Profile />
       <Target />
 
@@ -42,6 +42,8 @@ function App() {
         <img  className="log" src="/Profesional-Portafolio/logos/github.svg" alt="logo"/>
 
       </div>
+
+      <Sidebar />
 
     </>
   )
