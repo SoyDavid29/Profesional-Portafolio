@@ -5,6 +5,7 @@ import Profile from "./Components/Profile"
 import Sidebar from "./Components/Sidebar"
 import Target from "./Components/Target"
 import Title from "./Components/Tittle"
+import Projects from './Components/Projects';
 
 
 function App() {
@@ -42,6 +43,10 @@ function App() {
         <img  className="log" src="/Profesional-Portafolio/logos/github.svg" alt="logo"/>
 
       </div>
+
+      <h1 className='project-tittle' >PROJECTS</h1>
+
+      <Projects/>
 
       <Sidebar />
 

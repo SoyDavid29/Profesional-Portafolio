@@ -25,7 +25,7 @@ export default function Mainbar() {
     return (
         <div className={`main-bar ${scrolled ? 'scrolled' : ''}`} onClick={scrollToTop}>
             <h1 className='main-logo'>DR.</h1>
-            <a className='main-contact' href="#contact">Contact</a>
+            <a className='main-contact' href="https://api.whatsapp.com/send?phone=6181099912&text=Hola, te contacto desde tu página web. :)">Contact</a>
         </div>
     )
 }

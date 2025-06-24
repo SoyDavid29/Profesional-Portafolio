@@ -185,6 +185,7 @@ body {
 }
 
 .profile-animation {
+  
   margin: 0 auto;
   margin-top: 2em;
 
@@ -199,6 +200,7 @@ body {
 }
 
 .animation {
+  margin-top: 2em;
   width: 100%;
   height: auto;
 
@@ -361,6 +363,71 @@ body {
   height: auto;
   object-fit: cover;
 }
+
+.projects-container{
+
+  margin: 0 auto;
+  margin-top: 2em;
+
+  padding: 2em;
+
+  width: 80%;
+  height: auto;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgba(48, 48, 48, 0.425);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+}
+
+.project-tittle{
+  color: #ffffff;
+  font-size: 2em;
+
+  text-align: center;
+}
+
+.img-project{
+  width: 100%;
+  height: auto;
+}
+
+.link-project{
+  text-decoration: none;
+  color: #ffffff;
+
+  padding: 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  border: solid 1px white ;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  font-size: 80%;
+
+  width: 80%;
+}
+
+.project{
+  width: 90%;
+  height: auto;
+
+  padding: 0.5em 0.5em;
+
+  display: flex;
+  flex-direction: column;
+  
+  background: #000000e1;
+  border-radius: 10px;
+  gap: 1.5em;
+}
+
 
 .centered-section {
   width: 90%;
