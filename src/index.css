@@ -23,6 +23,57 @@ body {
   overflow-x: hidden;
 }
 
+.main-bar{
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 90%;
+  padding: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px) saturate(220%);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 8px;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-bar.scrolled {
+  width: 60%;
+  padding: 0.5em 1em;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.main-logo{
+  color: #ffffff;
+}
+
+.main-contact{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  background-color: #020024;
+  padding: 0.5em;
+  border-radius: 8px;
+}
+
+/* Optional: change styles of children too */
+.main-bar.scrolled .main-logo {
+  font-size: 1.2em;
+  color: #ffcc00;
+}
+
+.main-bar.scrolled .main-contact {
+  padding: 0.4em 1em;
+  font-size: 0.9em;
+  background-color: aliceblue;
+  color: black;
+  border: solid #ffcc00 2px;
+}
+
 .bar {
   position: fixed;
   bottom: 0;
@@ -148,6 +199,9 @@ body {
 }
 
 .animation {
+
+  margin-top: 2em;
+
   width: 100%;
   height: auto;
 
@@ -159,6 +213,7 @@ body {
 }
 
 .figure {
+
   width: 80%;
   min-width: 220px;
   aspect-ratio: 1/1;
