@@ -6,6 +6,7 @@ import Sidebar from "./Components/Sidebar"
 import Target from "./Components/Target"
 import Title from "./Components/Tittle"
 import Projects from './Components/Projects';
+import Contact from './Components/Contact';
 
 
 function App() {
@@ -47,6 +48,8 @@ function App() {
       <h1 className='project-tittle' >PROJECTS</h1>
 
       <Projects/>
+
+      <Contact/>
 
       <Sidebar />
 
