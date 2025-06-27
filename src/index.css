@@ -595,6 +595,59 @@ h3{
   justify-content: space-between;
 }
 
+.social-container{
+  margin: 0 auto;
+  margin-top: 2em;
+
+  width: 80%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  background: rgb(56, 56, 56);
+
+  border-radius: 12px;
+  padding: 1em;
+}
+
+.social{
+  width: 80%;
+  height: auto;
+
+  border-bottom: #f1f1f1 2px solid;
+}
+
+.design-tittle{
+  overflow-wrap: break-word;
+  max-width: 100%;
+  font-size: 1.2em;
+
+  display: flex;
+  gap: 1em;
+  color: #f1f1f1;
+}
+
+.david-tittle{
+  color: #000000;
+  white-space: wrap;
+}
+
+.david-tittle1{
+  white-space: wrap;
+}
+
+.logos-container{
+  width: 80%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .centered-section {
   width: 90%;
   max-width: 75rem;
