@@ -7,6 +7,7 @@ import Target from "./Components/Target"
 import Title from "./Components/Tittle"
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
+import Social from './Components/Social';
 
 
 function App() {
@@ -51,7 +52,9 @@ function App() {
 
       <Contact/>
 
-      <Sidebar/>
+      {/* <Sidebar/> */}
+
+      <Social/>
 
     </>
   )
