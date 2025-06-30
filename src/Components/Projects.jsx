@@ -1,10 +1,32 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
+import { Element } from 'react-scroll';
+import { useRef, useEffect, useState } from 'react';
+
 export default function Projects() {
+
+    const ref = useRef(null);
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setVisible(entry.isIntersecting);
+            },
+            { threshold: 0.3 }
+        );
+
+        if (ref.current) observer.observe(ref.current);
+
+        return () => {
+            if (ref.current) observer.unobserve(ref.current);
+        };
+    }, []);
+
     return (
 
-        <section className='projects'>
+        <section ref={ref} className={`projects ${visible ? 'visible' : ''}`}>
 
             <div className="projects-container">
                 <div className="project">
