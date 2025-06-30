@@ -6,41 +6,49 @@ export default function ContactForm() {
 
   const [state, handleSubmit] = useForm("mldgqqoy");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+    return <p>Thanks for joining!</p>;
   }
 
   return (
     <form className='form' onSubmit={handleSubmit}>
 
-      <label htmlFor="name">Your name:</label>
-      <input type="text" id="name" name="name"/>
+      <div className='label-container'>
+        <label htmlFor="name">Your name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
 
-      <label htmlFor="email">
-        Email Address:
-      </label>
-      <input
-        id="email"
-        type="email" 
-        name="email"
-      />
-      <ValidationError 
-        prefix="Email" 
-        field="email"
-        errors={state.errors}
-      />
-       
-       
-      <label htmlFor="text">Messege:</label>
-      <textarea
-        id="message"
-        name="message"
-      />
+      <div className='label-container'>
+        <label htmlFor="email">
+          Email Address:
+        </label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+        />
+        <ValidationError
+          prefix="Email"
+          field="email"
+          errors={state.errors}
+        />
+      </div>
 
-      <ValidationError 
-        prefix="Message" 
-        field="message"
-        errors={state.errors}
-      />
+
+
+      <div className='label-container'>
+        <label htmlFor="text">Messege:</label>
+        <textarea
+          id="message"
+          name="message"
+        />
+
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
+
+      </div>
 
       <button className='send-button' type="submit" disabled={state.submitting}>
         Send <FontAwesomeIcon icon={faRocket} />
