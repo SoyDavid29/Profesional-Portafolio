@@ -76,7 +76,7 @@ body {
 
 .bar {
   position: fixed;
-  bottom: 0;
+  bottom: 1px;
   left: 10%;
 
   width: 80%;
@@ -542,6 +542,12 @@ body {
 
   border: solid 1px white;
   border-radius: 8px;
+
+  transition: all 1.5s ease;
+}
+
+.card:hover{
+   transform: scale(1.2);
 }
 
 h3{
@@ -700,6 +706,16 @@ h3{
 .likedin{
   text-decoration: none;
   color: #2fb3f0;
+}
+
+.footer{
+  margin: 0 auto;
+  margin-top: 2em;
+
+  width: 110%;
+  height: 92px;
+
+  background: #000000;
 }
 
 .centered-section {
