@@ -52,9 +52,11 @@ function App() {
 
       <Contact/>
 
-      {/* <Sidebar/> */}
+      <Sidebar/> 
 
       <Social/>
+
+      <section className="footer"></section>
 
     </>
   )

@@ -76,7 +76,7 @@ body {
 
 .bar {
   position: fixed;
-  bottom: 0;
+  bottom: 1px;
   left: 10%;
 
   width: 80%;
@@ -197,6 +197,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  animation: run 2s ease;
 }
 
 .animation {
@@ -264,6 +266,7 @@ body {
   -webkit-text-fill-color: transparent;
 
   animation: gradient 3s linear infinite;
+  animation: visible 4  s ease;
 }
 
 .on {
@@ -300,6 +303,16 @@ body {
   text-align: center;
   box-sizing: border-box;
   word-break: break-word;
+
+  opacity: 90%;
+  transform: scale(95%);
+
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.target.visible{
+  opacity: 100%;
+  transform: scale(100%);
 }
 
 .tittle {
@@ -358,6 +371,7 @@ body {
   gap: 2rem;
 }
 
+
 .log {
   width: 20%;
   height: auto;
@@ -373,7 +387,18 @@ body {
 
   width: 95%;
   height: auto;
+
+  opacity: 80%;
+  transform: scale(80%);
+
+  transition: opacity 2.5s ease-in-out, transform 2.5s ease;
 }
+
+.projects.visible{
+  opacity: 100%;
+  transform: scale(100%);
+}
+
 
 .projects-container{
 
@@ -517,6 +542,12 @@ body {
 
   border: solid 1px white;
   border-radius: 8px;
+
+  transition: all 1.5s ease;
+}
+
+.card:hover{
+   transform: scale(1.2);
 }
 
 h3{
@@ -677,11 +708,32 @@ h3{
   color: #2fb3f0;
 }
 
+.footer{
+  margin: 0 auto;
+  margin-top: 2em;
+
+  width: 110%;
+  height: 92px;
+
+  background: #000000;
+}
+
 .centered-section {
   width: 90%;
   max-width: 75rem;
   margin: 0 auto;
 }
+
+@keyframes run{
+  from{transform: translate(-90%);}
+  to{transform: translate(0);}
+}
+
+@keyframes visible{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
 
 @keyframes flow {
   0% {
