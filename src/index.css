@@ -178,10 +178,21 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.link {
+.link{
   text-decoration: none;
   color: #ffffff;
   padding: 12px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em;
+  text-align: center;
+
+  border-bottom: #141414 solid 1px;
 }
 
 .profile-animation {

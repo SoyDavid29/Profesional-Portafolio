@@ -26,24 +26,27 @@ export default function Projects() {
 
     return (
 
-        <section ref={ref} className={`projects ${visible ? 'visible' : ''}`}>
+        <Element name="projects">
+            <section ref={ref} className={`projects ${visible ? 'visible' : ''}`}>
 
-            <div className="projects-container">
-                <div className="project">
-                    <img className="img-proyect" src="/Profesional-Portafolio/img/fundacion.jpg" alt="project fundation mgas" />
-                    <a className="link-project" href="https://fundacionmgas.org.mx/">FUNDACIÓN MGAS <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                <div className="projects-container">
+                    <div className="project">
+                        <img className="img-proyect" src="/Profesional-Portafolio/img/fundacion.jpg" alt="project fundation mgas" />
+                        <a className="link-project" href="https://fundacionmgas.org.mx/">FUNDACIÓN MGAS <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                    </div>
                 </div>
-            </div>
 
-            <div className="projects-container">
-                <div className="project">
-                    <img className="img-proyect" src="/Profesional-Portafolio/img/fundacion.jpg" alt="project fundation mgas" />
-                    <a className="link-project" href="https://fundacionmgas.org.mx/">FUNDACIÓN MGAS <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                <div className="projects-container">
+                    <div className="project">
+                        <img className="img-proyect" src="/Profesional-Portafolio/img/fundacion.jpg" alt="project fundation mgas" />
+                        <a className="link-project" href="https://fundacionmgas.org.mx/">FUNDACIÓN MGAS <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                    </div>
                 </div>
-            </div>
 
 
-        </section>
+            </section>
+
+        </Element>
 
 
     )

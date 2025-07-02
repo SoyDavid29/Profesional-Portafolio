@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Element } from 'react-scroll';
 
 import Mainbar from './Components/Mainbar';
 import Profile from "./Components/Profile"
@@ -26,39 +27,44 @@ function App() {
 
 
   return (
+
+    <Element name="start">
     <>
-      <Mainbar/>
-      
+      <Mainbar />
+
       <Profile />
       <Target />
 
       <Title scrollY={scrollY} />
 
-      <div className='technologies-container'>
-        <img  className="log" src="/Profesional-Portafolio/logos/html.svg" alt="logo"/>
-        <img  className="log" src="/Profesional-Portafolio/logos/csswizardry.svg" alt="logo"/>
-        <img  className="log" src="/Profesional-Portafolio/logos/javascript.svg" alt="logo"/>
-        <img  className="log" src="/Profesional-Portafolio/logos/figma.svg" alt="logo"/>
-        <img  className="log" src="/Profesional-Portafolio/logos/react.svg" alt="logo"/>
-        <img  className="log" src="/Profesional-Portafolio/logos/photoshop.svg" alt="logo"/>
-        <img  className="log" src="/Profesional-Portafolio/logos/git.svg" alt="logo"/>
-        <img  className="log" src="/Profesional-Portafolio/logos/github.svg" alt="logo"/>
+      <Element name="technologies" >
+        <div className='technologies-container'>
+          <img className="log" src="/Profesional-Portafolio/logos/html.svg" alt="logo" />
+          <img className="log" src="/Profesional-Portafolio/logos/csswizardry.svg" alt="logo" />
+          <img className="log" src="/Profesional-Portafolio/logos/javascript.svg" alt="logo" />
+          <img className="log" src="/Profesional-Portafolio/logos/figma.svg" alt="logo" />
+          <img className="log" src="/Profesional-Portafolio/logos/react.svg" alt="logo" />
+          <img className="log" src="/Profesional-Portafolio/logos/photoshop.svg" alt="logo" />
+          <img className="log" src="/Profesional-Portafolio/logos/git.svg" alt="logo" />
+          <img className="log" src="/Profesional-Portafolio/logos/github.svg" alt="logo" />
 
-      </div>
+        </div>
+      </Element>
 
       <h1 className='project-tittle' >PROJECTS</h1>
 
-      <Projects/>
+      <Projects />
 
-      <Contact/>
+      <Contact />
 
-      <Sidebar/> 
+      <Sidebar />
 
-      <Social/>
+      <Social />
 
       <section className="footer"></section>
 
     </>
+    </Element>
   )
 }
 
