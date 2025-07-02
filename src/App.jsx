@@ -29,41 +29,55 @@ function App() {
   return (
 
     <Element name="start">
-    <>
-      <Mainbar />
+      <>
+        <Mainbar />
 
-      <Profile />
-      <Target />
+        <Profile />
+        <Target />
 
-      <Title scrollY={scrollY} />
+        <Title scrollY={scrollY} />
 
-      <Element name="technologies" >
-        <div className='technologies-container'>
-          <img className="log" src="/Profesional-Portafolio/logos/html.svg" alt="logo" />
-          <img className="log" src="/Profesional-Portafolio/logos/csswizardry.svg" alt="logo" />
-          <img className="log" src="/Profesional-Portafolio/logos/javascript.svg" alt="logo" />
-          <img className="log" src="/Profesional-Portafolio/logos/figma.svg" alt="logo" />
-          <img className="log" src="/Profesional-Portafolio/logos/react.svg" alt="logo" />
-          <img className="log" src="/Profesional-Portafolio/logos/photoshop.svg" alt="logo" />
-          <img className="log" src="/Profesional-Portafolio/logos/git.svg" alt="logo" />
-          <img className="log" src="/Profesional-Portafolio/logos/github.svg" alt="logo" />
+        <Element name="technologies" >
+          <div className='technologies-container'>
+            <img className="log" src="/Profesional-Portafolio/logos/html.svg" alt="logo" />
+            <img className="log" src="/Profesional-Portafolio/logos/csswizardry.svg" alt="logo" />
+            <img className="log" src="/Profesional-Portafolio/logos/javascript.svg" alt="logo" />
+            <img className="log" src="/Profesional-Portafolio/logos/figma.svg" alt="logo" />
+            <img className="log" src="/Profesional-Portafolio/logos/react.svg" alt="logo" />
+            <img className="log" src="/Profesional-Portafolio/logos/photoshop.svg" alt="logo" />
+            <img className="log" src="/Profesional-Portafolio/logos/git.svg" alt="logo" />
 
+            <div className='github'>
+
+              <img className="log-github" src="/Profesional-Portafolio/logos/github.svg" alt="logo" />
+
+              <a className='git-button' href="https://github.com/SoyDavid29">Click Me!!</a>
+
+            </div>
+
+          </div>
+
+        </Element>
+
+        <div className='text-project'>
+          <h1 className='project-tittle' >PROJECTS</h1>
+          <p className='text-specialize' >I specialize in designing and building effective websites
+            that combine visual design, strategic content,
+            and intuitive interaction to attract and convert visitors into customers.</p>
         </div>
-      </Element>
 
-      <h1 className='project-tittle' >PROJECTS</h1>
 
-      <Projects />
+        <Projects />
 
-      <Contact />
+        <Contact />
 
-      <Sidebar />
+        <Sidebar />
 
-      <Social />
+        <Social />
 
-      <section className="footer"></section>
+        <section className="footer"></section>
 
-    </>
+      </>
     </Element>
   )
 }
