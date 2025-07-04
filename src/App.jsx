@@ -9,6 +9,7 @@ import Title from "./Components/Tittle"
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Social from './Components/Social';
+import Sidebar2 from './Components/Sidebar2';
 
 
 function App() {
@@ -29,8 +30,11 @@ function App() {
   return (
 
     <Element name="start">
+      
       <>
         <Mainbar />
+
+        <Sidebar2/>
 
         <Profile />
         <Target />

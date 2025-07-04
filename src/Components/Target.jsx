@@ -3,26 +3,21 @@ import { useRef, useEffect, useState } from 'react';
 
 export default function Target() {
   const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
- useEffect(() => {
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      setVisible(entry.isIntersecting);
-    },
-    { threshold: 0.3 }
-  );
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setScrolled(offset > 20); // Change 50 to whatever threshold you want
+    };
 
-  if (ref.current) observer.observe(ref.current);
-
-  return () => {
-    if (ref.current) observer.unobserve(ref.current);
-  };
-}, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <Element name="about" > 
-      <div ref={ref} className={`target ${visible ? 'visible' : ''}`}>
+    <Element name="about">
+      <div ref={ref} className={`target ${scrolled ? 'visible' : ''}`}>
         <h1 className="tittle">Hey there! I'm David.</h1>
         <p className="about">
           I'm a Computer Systems Engineering student with a big passion for UX/UI Design. 
