@@ -10,7 +10,7 @@ export default function Sidebar2() {
 
     useEffect(() => {
         const openScroll = () => {
-            const offset = window.scrollY;
+            const offset = window.scrollY;  /* scroll animation activated in 50px */
             setScrolled(offset > 50);
         };
 
@@ -24,8 +24,9 @@ export default function Sidebar2() {
             smooth: "easeInOutQuart"
         });
     };
+
     return (
-        <div className="sidebar2">
+        <div className={`sidebar2 ${scrolled ? "scrolled" : "" }`}>
 
             <h1 className='main-logo'>DR.</h1>
 
