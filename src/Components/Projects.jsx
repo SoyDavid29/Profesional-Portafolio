@@ -31,14 +31,14 @@ export default function Projects() {
 
                 <div className="projects-container">
                     <div className="project">
-                        <img className="img-proyect" src="/Profesional-Portafolio/img/fundacion.jpg" alt="project fundation mgas" />
+                        <img className="img-proyect" src="/img/fundacion.jpg" alt="project fundation mgas" />
                         <a className="link-project" href="https://fundacionmgas.org.mx/">FUNDACIÓN MGAS <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
                     </div>
                 </div>
 
                 <div className="projects-container">
                     <div className="project">
-                        <img className="img-proyect" src="/Profesional-Portafolio/img/fundacion.jpg" alt="project fundation mgas" />
+                        <img className="img-proyect" src="/img/fundacion.jpg" alt="project fundation mgas" />
                         <a className="link-project" href="https://fundacionmgas.org.mx/">FUNDACIÓN MGAS <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
                     </div>
                 </div>

@@ -43,17 +43,17 @@ function App() {
 
         <Element name="technologies" >
           <div className='technologies-container'>
-            <img className="log" src="/Profesional-Portafolio/logos/html.svg" alt="logo" />
-            <img className="log" src="/Profesional-Portafolio/logos/csswizardry.svg" alt="logo" />
-            <img className="log" src="/Profesional-Portafolio/logos/javascript.svg" alt="logo" />
-            <img className="log" src="/Profesional-Portafolio/logos/figma.svg" alt="logo" />
-            <img className="log" src="/Profesional-Portafolio/logos/react.svg" alt="logo" />
-            <img className="log" src="/Profesional-Portafolio/logos/photoshop.svg" alt="logo" />
-            <img className="log" src="/Profesional-Portafolio/logos/git.svg" alt="logo" />
+            <img className="log" src="/logos/html.svg" alt="logo" />
+            <img className="log" src="/logos/csswizardry.svg" alt="logo" />
+            <img className="log" src="/logos/javascript.svg" alt="logo" />
+            <img className="log" src="/logos/figma.svg" alt="logo" />
+            <img className="log" src="/logos/react.svg" alt="logo" />
+            <img className="log" src="/logos/photoshop.svg" alt="logo" />
+            <img className="log" src="/logos/git.svg" alt="logo" />
 
             <div className='github'>
 
-              <img className="log-github" src="/Profesional-Portafolio/logos/github.svg" alt="logo" />
+              <img className="log-github" src="/logos/github.svg" alt="logo" />
 
               <a className='git-button' href="https://github.com/SoyDavid29">Click Me!!</a>
 
