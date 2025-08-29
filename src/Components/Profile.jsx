@@ -6,7 +6,7 @@ export default function Profile() {
             <div className="animation" >
 
                 <div className="figure" >
-                      <img className="img" src="/img/yo.jpg" alt="picture of david" />
+                      <img className="img" src="/img/perfil-yellow.jpg" alt="picture of david" />
                 </div>
 
                 <div className="texts">

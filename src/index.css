@@ -21,6 +21,7 @@ body {
 
   height: 100vh;
   overflow-x: hidden;
+  min-width: 328px;
 }
 
 .main-bar{
@@ -274,10 +275,10 @@ body {
 
 .figure {
   width: 80%;
-  min-width: 220px;
+  min-width: 300px;
   aspect-ratio: 1/1;
   border-radius: 70% 30% 49% 51% / 30% 45% 55% 70%;
-  border: solid 2.5px rgb(158, 159, 221);
+  border: solid 2.5px rgb(0, 0, 0);
   position: relative;
   overflow: hidden;
 
@@ -393,14 +394,27 @@ body {
   color: #f1f1f1;
 }
 
-.magic-text {
-  
+.skill-text{
   width: 90%;
+  min-width: 300px;
   height: auto;
 
   margin: 0 auto;
-  margin-top: 2rem;
-  font-size: 3em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.magic-text {
+  
+  width: 100%;
+  min-width: 300px;
+  height: auto;
+
+  font-size: 2em;
+  text-align: center;
 
   display: flex;
   justify-content: center;
@@ -426,7 +440,7 @@ body {
 }
 
 .magic-text1{
-  width: 80%;
+  width: 90%;
   height: auto;
 
   margin: 0 auto;
@@ -464,6 +478,7 @@ body {
   margin: 0 auto;
   margin-top: 2rem;
   width: 90%;
+  min-width: 300px;
   max-width: 800px;
   height: auto;
   padding: 1.5em;
@@ -530,6 +545,7 @@ body {
   flex-direction: column;
 
   width: 95%;
+  min-width: 300px;
   height: auto;
 
   opacity: 80%;
@@ -552,7 +568,7 @@ body {
   padding: 2em;
 
   width: 80%;
-  min-width: 174px;
+  min-width: 300px;
   height: auto;
   
   display: flex;
@@ -569,6 +585,7 @@ body {
 
 .text-project{
   width: 80%;
+  min-width: 300px;
   height: auto;
 
   margin: 0 auto;
@@ -586,13 +603,16 @@ body {
 
   margin-top: 1.5em;
   color: #ffffff;
-  font-size: 2em;
+  font-size: 1.5em;
 
   text-align: center;
 }
 
 .text-specialize{
   color: #ccc;
+  font-size: 1em;
+  text-align: center;
+  min-width: 300px;
 }
 
 .img-project{
@@ -609,6 +629,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 1em;
   border: solid 1px white ;
   border-radius: 8px;
@@ -616,12 +637,12 @@ body {
   
   font-size: 80%;
 
-  width: 80%;
+  width: 90%;
   min-width: 100px;
 }
 
 .project{
-  width: 90%;
+  width: 100%;
   min-width: 145px;
 
   height: auto;
@@ -690,7 +711,7 @@ body {
 
 .card{
   width: 90%;
-  min-width: 230px;
+  min-width: 300px;
   height: auto;
 
   background: rgba(81, 221, 240, 0.233);
@@ -746,20 +767,26 @@ h3{
 
 
 .form-container{
+
   margin-top: 2em;
 
-  width: 90%;
+  width: 100%;
+  min-width: 300px;
   height: auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2em;
 }
 
 .form{
-  width: 100%;
+  width: 90%;
+  min-width: 300px;
   height: auto;
+
+  margin: 0 auto;
 
   background: rgba(81, 221, 240, 0.233);
   backdrop-filter: blur(10px) saturate(100%);
@@ -837,7 +864,8 @@ textarea{
   margin: 0 auto;
   margin-top: 2em;
 
-  width: 80%;
+  width: 90%;
+  min-width: 300px;
   height: auto;
 
   display: flex;
@@ -853,6 +881,7 @@ textarea{
 
 .social{
   width: 80%;
+  min-width: 300px;
   height: auto;
   padding-bottom: 0.5em;
 
@@ -898,6 +927,7 @@ textarea{
   margin-top: 2em;
 
   width: 100%;
+  min-width: 300px;
   height: 92px;
 
   background: #000000;
